@@ -49,5 +49,17 @@ In python file, it was defined as function method2(ploygon, point)<br>
 |<center><img src="https://github.com/cshgiser/isPointInPloygon/blob/main/image/method2_1.jpg" width="300"/></center>|<center><img src="https://github.com/cshgiser/isPointInPloygon/blob/main/image/method2_2.jpg" width="300"/></center>|<center><img src="https://github.com/cshgiser/isPointInPloygon/blob/main/image/method2_3.jpg" width="300"/></center>|
 |  ----  | ----  | ----  |
 
+>The minimum bounding rectangle (MBR) is obtained firstly to filter points that are not in MBR. In this case, the point can not be located in the ploygon.<br>
+>
+>If point is not located in MBR, then,  this function will **return 'point is not in the ploygon'**.<br>
+>
+>If point is located in MBR, then,
+>>Traverse each line in ploygon, determining whether the point is on the edge of the given ploygon. <br>
+>>
+>>If the point is located on the edge, then, **return 'point is on edge of the ploygon'**.<br>
+>>
+>>If the point is not located on the edge, then, 
+>>>Traverse each enclosed region, calculating the sum of angles that are formed by the point and each line of the enclosed ploygon. 
+
 
 to be continued...
