@@ -23,7 +23,7 @@ Then, the differe results will be returned, including three circumstances.
 
 In python file, it was defined as function method1(ploygon, point)<br>
 
-![figure_method1](https://github.com/cshgiser/isPointInPloygon/blob/main/image/method1.jpg)
+<center><img src="https://github.com/cshgiser/isPointInPloygon/blob/main/image/method1.jpg" width="300"/></center>
 
 the procedures of this algorithm is as following:<br>
 
@@ -46,6 +46,8 @@ the procedures of this algorithm is as following:<br>
 In python file, it was defined as function method2(ploygon, point)<br>
 
 
-<center>    <img src="https://github.com/cshgiser/isPointInPloygon/blob/main/image/method1.jpg" width="300"/><img src="https://github.com/cshgiser/isPointInPloygon/blob/main/image/method1.jpg" width="300"/><img src="https://github.com/cshgiser/isPointInPloygon/blob/main/image/method1.jpg" width="300"/></center>
+|<center><img src="https://github.com/cshgiser/isPointInPloygon/blob/main/image/method2_1.jpg" width="300"/></center>|<center><img src="https://github.com/cshgiser/isPointInPloygon/blob/main/image/method2_2.jpg" width="300"/></center>|<center><img src="https://github.com/cshgiser/isPointInPloygon/blob/main/image/method2_3.jpg" width="300"/></center>|
+|  ----  | ----  | ----  |
+
 
 to be continued...
