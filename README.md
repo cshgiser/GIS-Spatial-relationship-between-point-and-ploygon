@@ -23,6 +23,8 @@ Then, the differe results will be returned, including three circumstances.
 
 In python file, it was defined as function method1(ploygon, point)<br>
 
+![figure_method1](https://github.com/cshgiser/isPointInPloygon/blob/main/image/method1.jpg)
+
 the procedures of this algorithm is as following:<br>
 
 >The minimum bounding rectangle (MBR) is obtained firstly to filter points that are not in MBR. In this case, the point can not be located in the ploygon.<br>
@@ -39,4 +41,11 @@ the procedures of this algorithm is as following:<br>
 >>>
 >>>If the 
 
+## method2
 
+In python file, it was defined as function method2(ploygon, point)<br>
+
+
+<center>    <img src="https://github.com/cshgiser/isPointInPloygon/blob/main/image/method1.jpg" width="300"/><img src="https://github.com/cshgiser/isPointInPloygon/blob/main/image/method1.jpg" width="300"/><img src="https://github.com/cshgiser/isPointInPloygon/blob/main/image/method1.jpg" width="300"/></center>
+
+to be continued...
