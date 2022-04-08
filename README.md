@@ -1,4 +1,4 @@
-# isPointInPloygon
+# GIS-Spatial relationship between point and ploygon
 Providing two algorithms for determining whether a point is in a ploygon using Python
 
 ## input and output in python file
