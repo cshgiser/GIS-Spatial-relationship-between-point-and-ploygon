@@ -14,7 +14,7 @@ def getMBR(ploygon):
     for plg in ploygon:
         for i in range(len(plg)):
             xx = plg[i][0]
-            yy = plg[i][0]
+            yy = plg[i][1]
             if xx < left_bottom_x:
                 left_bottom_x = xx
             if xx > right_up_x:
@@ -36,7 +36,7 @@ def distance(pointA, pointB):
     return ((pointA[0] - pointB[0]) ** 2 + (pointA[1] - pointB[1]) ** 2) ** 0.5
 
 
-def isOnEdge(startPoint, endPoint, point):
+def isOnEdge(startP, endP, p):
     """
     whether the given point is on the line
     :param startPoint: the start point of the line
@@ -44,10 +44,11 @@ def isOnEdge(startPoint, endPoint, point):
     :param point: the given point
     :return: if point is on line, return True, else, return False
     """
-    if distance(startPoint, point) + distance(endPoint, point) == distance(startPoint, endPoint):
-        return True
-    else:
-        return False
+    # Using a small epsilon for float stability
+    d1 = distance(startP, p)
+    d2 = distance(endP, p)
+    d3 = distance(startP, endP)
+    return math.isclose(d1 + d2, d3, rel_tol=1e-9)
 
 
 def crossPoint(lineA, lineB):
@@ -170,7 +171,7 @@ def method2(ploygon, point):
                 ang = -ang
             sum_angle += ang
 
-    if int(sum_angle / (2 * math.pi)) % 2 == 1:  # if sum_angle is equal to 2pi, or 3*2pi, or 5*2pi, ....
+    if round(sum_angle / (2 * math.pi)) % 2 == 1:  # if sum_angle is equal to 2pi, or 3*2pi, or 5*2pi, ....
         return 'point is in the ploygon'
     else:  # if sum_angle is equal to 0, or 2*2pi, or 4*2pi, ....
         return 'point is not in the ploygon'
@@ -185,4 +186,5 @@ if __name__=='__main__':
     ploygonn = [[(1, 1), (2, 3), (2, 4), (1, 6), (3, 10), (11, 8), (11, 3), (7, 0.5), (1, 1)]]
     print(method1(ploygonn, point))
     print(method2(ploygonn, point))
+
 
